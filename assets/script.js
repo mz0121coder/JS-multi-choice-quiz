@@ -9,4 +9,17 @@ var quizCount = 0;
 var recordArray = [];
 var userScores = [];
 var clock;
-var setTime;
+var setTime; 
+
+var pageContentEl = function (element) {
+    return document.querySelector(element);
+  };
+  //hidden
+  var onlyDisplaySection = function (element) {
+    let sections = document.querySelectorAll("section");
+    Array.from(sections).forEach(function (userItem) {
+      userItem.classList.add("hidden");
+    });
+    pageContentEl(element).classList.remove("hidden");
+  };
+  
