@@ -147,9 +147,24 @@ var counterTimer = function () {
         choices: ["JavaScript", "terminal / bash", "for loops", "console.log"],
         answer: "console.log",
     },
-    ];
-    
-    
+];
+///time 
+var viewHighScores = function (view) {
+    view.preventDefault();
+    clearInterval(clock);
+    pageContentEl("#time").innerHTML = 0;
+    time = 250;
+    score = 0;
+    quizCount = 0;
+    onlyDisplaySection("#highScores");
+    recordsHtmlReset();
+  };    
+ //Start 
+var startQuiz = function () {
+    setQuestionData();
+    onlyDisplaySection("#questArea");
+    clock = setInterval(counterTimer, 1000);
+  };   
 
 
       
