@@ -229,7 +229,7 @@ var clearHighScores = function () {
   };
  //reset quiz
 var quizReset = function () {
-    time = 60;
+    time = 250;
     score = 0;
     quizCount = 0;
     onlyDisplaySection("#criteriaPage");
