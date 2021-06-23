@@ -19,3 +19,7 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
 ```
+
+## Working links
+* Repo : https://github.com/mz0121coder/JS-multi-choice-quiz
+* Main URL: https://mz0121coder.github.io/JS-multi-choice-quiz
