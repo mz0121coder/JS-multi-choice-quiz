@@ -242,3 +242,10 @@ var quizReset = function () {
     check.addEventListener("click", scoreTimeAdjust);
   });       
 
+// Event Listeners
+
+pageContentEl("#criteriaPage button").addEventListener("click", startQuiz);
+pageContentEl("#goBack").addEventListener("click", quizReset);
+pageContentEl("#name button").addEventListener("click", enterInitials);
+pageContentEl("#clearScore").addEventListener("click", clearHighScores);
+pageContentEl("#scores").addEventListener("click", viewHighScores);
