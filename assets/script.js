@@ -212,7 +212,7 @@ var scoreTimeAdjust = function () {
     if (
       this.innerHTML.substring(3, this.length) === questions[quizCount].answer
     ) {
-      score = score + 5;
+      score = score + 10;
       quizCount = quizCount + 1;
       quizUpdate("Correct");
       //quiz incorrect score time penalty
