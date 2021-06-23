@@ -31,7 +31,7 @@
   #scores {
     float: left;
     background-color: darkblue;
-    color: white;
+    color: yellow;
     padding-left: 10px 15px 10px 15px;
     margin: 10px;
     font-size: 15px;
@@ -41,7 +41,7 @@
 
   button {
     background-color: darkblue;
-    color: white;
+    color: yellow;
     padding: 10px 15px 10px 15px;
     margin: 10px;
     font-size: 15px;
