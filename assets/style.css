@@ -36,3 +36,39 @@
     border-color: black;
     font-size: smaller;
   }
+
+  button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+    font-size: 15px;
+    flex: auto;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  #answersoption {
+    display: block;
+  
+    padding: 10px 15px 10px 15px;
+    flex: auto;
+  }
+  button:hover {
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    padding: 10px 15px 10px 15px;
+  }
+  section {
+    max-width: 50%;
+    margin: auto;
+  }
+  
+  #achievedScore {
+    border-top: 1px solid darkblue;
+    color: darkblue;
+    margin: 10px auto;
+    font-size: 14px;
+  }
