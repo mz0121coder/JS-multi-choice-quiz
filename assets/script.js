@@ -165,7 +165,27 @@ var startQuiz = function () {
     onlyDisplaySection("#questArea");
     clock = setInterval(counterTimer, 1000);
   };   
-
-
+//right/wrong answer 
+var achievedScore = function () {
+    clearTimeout(setTime);
+    setTime = setTimeout(function () {
+      pageContentEl("#achievedScore").classList.add("gone");
+    }, 1000);
+  };
+//total score
+var scoreTimeAdjust = function () {
+    if (
+      this.innerHTML.substring(3, this.length) === questions[quizCount].answer
+    ) {
+      score = score + 5;
+      quizCount = quizCount + 1;
+      quizUpdate("Correct");
+    } else {
+      time = time - 10;
+      quizCount = quizCount + 1;
+      quizUpdate("Incorrect");
+    }
+  };
+  
       
 
