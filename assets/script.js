@@ -186,6 +186,25 @@ var scoreTimeAdjust = function () {
       quizUpdate("Incorrect");
     }
   };
-  
+//User initials
+var enterInitials = function () {
+    let initialsRecord = pageContentEl("#initials").value;
+    //if no character selected
+    if (initialsRecord === "") {
+      document.querySelector("#errorMessage").innerHTML =
+        "Please enter your Initials";
+    } else {
+      recordArray.push({
+        initialRecord: initialsRecord,
+        score: score,
+      });
+      //record high scores
+      localStorage.setItem("recordArray", JSON.stringify(recordArray));
+      pageContentEl("#highScores div").innerHTML = "";
+      onlyDisplaySection("#highScores");
+      recordsHtmlReset();
+      pageContentEl("#initials").value = "";
+    }
+  };
       
 
