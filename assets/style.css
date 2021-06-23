@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: auto, 30px;
+  }
+  body {
+    text-align: center;
+    flex: auto;
+    background-color: firebrick
+  }
+  
+  .quiz-heading {
+    text-align: center;
+    flex: auto;
+    display: inline-block;
+    color:yellow
+  }
+  
+  p {
+    padding: 20px;
+    font-size: 22px;
+    color:yellow
+  }
