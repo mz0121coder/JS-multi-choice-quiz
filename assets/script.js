@@ -159,6 +159,7 @@ var viewHighScores = function (view) {
     onlyDisplaySection("#highScores");
     recordsHtmlReset();
   };    
+
  //Start 
 var startQuiz = function () {
     setQuestionData();
@@ -204,6 +205,21 @@ var enterInitials = function () {
       onlyDisplaySection("#highScores");
       recordsHtmlReset();
       pageContentEl("#initials").value = "";
+    }
+  };
+  //quiz score 
+var scoreTimeAdjust = function () {
+    if (
+      this.innerHTML.substring(3, this.length) === questions[quizCount].answer
+    ) {
+      score = score + 5;
+      quizCount = quizCount + 1;
+      quizUpdate("Correct");
+      //quiz incorrect score time penalty
+    } else {
+      time = time - 10;
+      quizCount = quizCount + 1;
+      quizUpdate("Incorrect");
     }
   };
 //clear high scores
