@@ -43,3 +43,32 @@ var quizUpdate = function (answerCopy) {
     }
   }, 1000);
 };
+//timer
+var counterTimer = function () {
+    if (time > 0) {
+      time = time - 1;
+      pageContentEl("#time").innerHTML = time;
+      //end
+    } else {
+      clearInterval(clock);
+      pageContentEl("#score").innerHTML = score;
+      onlyDisplaySection("#finish");
+    }
+  };
+  //questions function
+  var setQuestionData = function () {
+    pageContentEl("#questArea p").innerHTML = questions[quizCount].questionInfo;
+    pageContentEl(
+      "#questArea button:nth-of-type(1)"
+    ).innerHTML = `1. ${questions[quizCount].choices[0]}`;
+    pageContentEl(
+      "#questArea button:nth-of-type(2)"
+    ).innerHTML = `2. ${questions[quizCount].choices[1]}`;
+    pageContentEl(
+      "#questArea button:nth-of-type(3)"
+    ).innerHTML = `3. ${questions[quizCount].choices[2]}`;
+    pageContentEl(
+      "#questArea button:nth-of-type(4)"
+    ).innerHTML = `4. ${questions[quizCount].choices[3]}`;
+  };
+
