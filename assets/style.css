@@ -72,3 +72,26 @@
     margin: 10px auto;
     font-size: 14px;
   }
+  .gone {
+    visibility: hidden;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @media (max-width: 690px) {
+    #question2 {
+      font-size: smaller;
+    }
+    #question1 {
+      font-size: smaller;
+    }
+    #questInfo {
+      font-size: smaller;
+    }
+    #answersoption {
+      padding: 5px 0px 5px 0px;
+      margin: 5px;
+    }
+}
