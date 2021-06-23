@@ -94,4 +94,28 @@
       padding: 5px 0px 5px 0px;
       margin: 5px;
     }
-}
+
+button {
+    padding: 5px 0px 5px 0px;
+    margin: 5px;
+  }
+  #scores {
+    font-size: smaller;
+    padding: 5px 0px 5px 0px;
+  }
+  #timer p {
+    font-size: smaller;
+  }
+  #finish p {
+    font-size: smaller;
+  }
+  #name input {
+    padding: 5px;
+  }
+  h1 {
+    font-size: smaller;
+  }
+  button:hover {
+    padding: 5px 0px 5px 0px;
+  }
+  }
