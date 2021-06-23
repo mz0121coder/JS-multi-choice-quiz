@@ -189,7 +189,7 @@ var scoreTimeAdjust = function () {
 //User initials
 var enterInitials = function () {
     let initialsRecord = pageContentEl("#initials").value;
-    //if no character selected
+    //if no character entered
     if (initialsRecord === "") {
       document.querySelector("#errorMessage").innerHTML =
         "Please enter your Initials";
@@ -206,5 +206,39 @@ var enterInitials = function () {
       pageContentEl("#initials").value = "";
     }
   };
-      
+//clear high scores
+var clearHighScores = function () {
+    recordArray = [];
+    pageContentEl("#highScores div").innerHTML = "";
+    localStorage.removeItem("recordArray");
+  };
+  var recordsHtmlReset = function () {
+    pageContentEl("#highScores div").innerHTML = "";
+    let i = 1;
+    recordArray.sort((a, b) => b.score - a.score);
+    Array.from(recordArray).forEach((check) => {
+      var scores = document.createElement("div");
+      scores.innerHTML = i + ". " + check.initialRecord + " - " + check.score;
+      pageContentEl("#highScores div").appendChild(scores);
+      i = i + 1;
+    });
+    i = 0;
+    Array.from(answers).forEach((answer) => {
+      answer.classList.remove("disable");
+    });
+  };
+ //reset quiz
+var quizReset = function () {
+    time = 60;
+    score = 0;
+    quizCount = 0;
+    onlyDisplaySection("#criteriaPage");
+  };
+  
+  localStorage.getItem("recordArray")
+    ? (recordArray = JSON.parse(localStorage.getItem("recordArray")))
+    : (recordArray = []);
+  Array.from(answers).forEach((check) => {
+    check.addEventListener("click", scoreTimeAdjust);
+  });       
 
