@@ -104,7 +104,7 @@ var counterTimer = function () {
         answer: "valueOf()",
     }, 
     {
-        questionInfo: "Which of the following function of String object causes a string to be displayed in the specified color as if it were in a <font color='color'> tag?",
+        questionInfo: "Which of the following function of String object causes a string to be displayed in the specified color as if it were in a tag?",
         choices: ["fixed()", "fontcolor()", "blink()", "bold()"],
         answer: "fontcolor()",
     }, 
