@@ -2,7 +2,7 @@
 
 A challenging, timed quiz on the primary language used to build it: JavaScript.  
 
-The main objective is to test the user's knowledge with multiple choice coding questions. Starting with 250 seconds on the timer, 14 questions are presented with 4 possible answers. 10 points are added for correct responses, while wrong answers deduct 10 seconds from the time limit. One is then taken to a high scores page which can be reset as desired.  
+The main objective is to test the user's knowledge with multiple choice coding-related questions. Starting with 250 seconds on the timer, 14 questions are presented with 4 possible answers. 10 points are added for correct responses, while wrong answers deduct 10 seconds from the time limit. One is then taken to a high scores page which can be reset as desired.  
 
 This application uses dynamically updated, responsive HTML and CSS powered by JS based on the following guidelines:
 
