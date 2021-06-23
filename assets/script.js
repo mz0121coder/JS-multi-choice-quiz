@@ -71,4 +71,57 @@ var counterTimer = function () {
       "#questArea button:nth-of-type(4)"
     ).innerHTML = `4. ${questions[quizCount].choices[3]}`;
   };
+  //questions & answers
+  var questions = [
+    {
+      questionInfo: "Which of the following is a valid type of function javascript supports?",
+      choices: ["named function", "anonymous function", "Both of the above.", "None of the above."],
+      answer: "Both of the above.",
+    }, 
+    {
+        questionInfo: "Which built-in method adds one or more elements to the end of an array and returns the new length of the array?",
+        choices: ["last()", "put()", "push()", "None of the above."],
+        answer: "push()",
+    }, 
+    {
+        questionInfo: "Which built-in method returns the characters in a string beginning at the specified location?",
+        choices: ["substr()", "getSubstring()", "slice()", "None of the above."],
+        answer: "substr()",
+    }, 
+    {
+        questionInfo: "Which of the following function of String object returns a number indicating the Unicode value of the character at the given index?",
+        choices: ["charAt()", "charCodeAt()", "concat()", "indexOf()"],
+        answer: "charCodeAt()",
+    }, 
+    {
+        questionInfo: "Which of the following function of String object splits a String object into an array of strings by separating the string into substrings?",
+        choices: ["slice()", "split()", "replace()", "search()"],
+        answer: "split()",
+    }, 
+    {
+        questionInfo: "Which of the following function of String object returns the primitive value of the specified object?",
+        choices: ["toLocaleUpperCase()", "toUpperCase()", "toString()", "valueOf()"],
+        answer: "valueOf()",
+    }, 
+    {
+        questionInfo: "Which of the following function of String object causes a string to be displayed in the specified color as if it were in a <font color='color'> tag?",
+        choices: ["fixed()", "fontcolor()", "blink()", "bold()"],
+        answer: "fontcolor()",
+    }, 
+    {
+        questionInfo: "Which of the following function of Array object returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found?",
+        choices: ["indexOf()", "join()", "lastIndexOf()", "map()"],
+        answer: "lastIndexOf()",
+    }, 
+    {
+        questionInfo: "Which of the following function of Array object sorts the elements of an array?",
+        choices: ["toSource()", "sort()", "toString()", "unshift()"],
+        answer: "sort()",
+    }, 
+    
+    
+    
+
+
+      
 
