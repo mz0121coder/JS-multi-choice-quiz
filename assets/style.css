@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 10px;
     margin: auto, 30px;
+    font-family: 'Lobster',cursive;
   }
   body {
     text-align: center;
@@ -85,13 +86,13 @@
   
   @media (max-width: 690px) {
     #question2 {
-      font-size: smaller;
+      font-size: medium;
     }
     #question1 {
-      font-size: smaller;
+      font-size: medium;
     }
     #questInfo {
-      font-size: smaller;
+      font-size: medium;
     }
     #answersoption {
       padding: 5px 0px 5px 0px;
@@ -103,20 +104,20 @@ button {
     margin: 5px;
   }
   #scores {
-    font-size: smaller;
+    font-size: medium;
     padding: 5px 0px 5px 0px;
   }
   #timer p {
-    font-size: smaller;
+    font-size: medium;
   }
   #finish p {
-    font-size: smaller;
+    font-size: medium;
   }
   #name input {
     padding: 5px;
   }
   h1 {
-    font-size: smaller;
+    font-size: medium;
   }
   button:hover {
     padding: 5px 0px 5px 0px;
