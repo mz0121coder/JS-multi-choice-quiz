@@ -26,8 +26,8 @@
   }
   #timer p {
     float: right;
-    padding-right: 20px;
-    font-size: 17px;
+    padding-right: 5px;
+    font-size: 22px;
     flex: auto;
   }
   #scores {
@@ -36,7 +36,7 @@
     color: yellow;
     padding-left: 10px 15px 10px 15px;
     margin: 10px;
-    font-size: 15px;
+    font-size: 18px;
     flex: auto;
     border-radius: 10px;
   }
@@ -46,7 +46,7 @@
     color: yellow;
     padding: 10px 15px 10px 15px;
     margin: 10px;
-    font-size: 15px;
+    font-size: 18px;
     flex: auto;
     display: inline-block;
     border-radius: 10px;
@@ -59,7 +59,7 @@
   }
   button:hover {
     text-align: center;
-    font-size: 17px;
+    font-size: 18px;
     color: white;
     background-color: black;
     border-color: black;
@@ -74,7 +74,7 @@
     border-top: 1px solid darkblue;
     color: darkblue;
     margin: 10px auto;
-    font-size: 14px;
+    font-size: 18px;
   }
   .gone {
     visibility: hidden;
@@ -86,13 +86,13 @@
   
   @media (max-width: 690px) {
     #question2 {
-      font-size: medium;
+      font-size: 18px;
     }
     #question1 {
-      font-size: medium;
+      font-size: 18px;
     }
     #questInfo {
-      font-size: medium;
+      font-size: 18px;
     }
     #answersoption {
       padding: 5px 0px 5px 0px;
@@ -104,20 +104,20 @@ button {
     margin: 5px;
   }
   #scores {
-    font-size: medium;
+    font-size: 18px;
     padding: 5px 0px 5px 0px;
   }
   #timer p {
-    font-size: medium;
+    font-size: 18px;
   }
   #finish p {
-    font-size: medium;
+    font-size: 18px;
   }
   #name input {
     padding: 5px;
   }
   h1 {
-    font-size: medium;
+    font-size: 18px;
   }
   button:hover {
     padding: 5px 0px 5px 0px;
